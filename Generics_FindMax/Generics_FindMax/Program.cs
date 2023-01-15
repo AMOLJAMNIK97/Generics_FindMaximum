@@ -10,9 +10,11 @@ namespace Generics_FindMax
     {
         static void Main(string[] args)
         {
-            String_Max string_Max = new String_Max();
-            string Max = string_Max.Find_StringMax("Apple", "Peach", "Banana");
-            Console.WriteLine(Max);
+            GenericMethod generic = new GenericMethod();
+            int Max = generic.MaxValue<int>(22, 35, 12);
+            float floatvalue = generic.MaxValue<float>(85.2f, 10.55f, 66.4f);
+            string stringMax = generic.MaxValue<string>("sanjay", "Salman", "Rahul");
+            Console.WriteLine(Max +" "+ floatvalue +" "+ stringMax );
         }
     }
 }
