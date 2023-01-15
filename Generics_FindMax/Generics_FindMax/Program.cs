@@ -10,11 +10,17 @@ namespace Generics_FindMax
     {
         static void Main(string[] args)
         {
-            GenericMethod generic = new GenericMethod();
-            int Max = generic.MaxValue<int>(22, 35, 12);
-            float floatvalue = generic.MaxValue<float>(85.2f, 10.55f, 66.4f);
-            string stringMax = generic.MaxValue<string>("sanjay", "Salman", "Rahul");
-            Console.WriteLine(Max +" "+ floatvalue +" "+ stringMax );
+             
+            string max1= GenericMaximum<string>.MaxValue("Abhay", "Vikas", "Nana");
+            float max2= GenericMaximum<float>.MaxValue(55.2f, 66.4f, 51.0f);
+            int max= GenericMaximum<int>.MaxValue(1, 55, 64);
+            Console.WriteLine(max);
+            Console.WriteLine(max1);
+            Console.WriteLine(max2);
+
+
+
+
         }
     }
 }
