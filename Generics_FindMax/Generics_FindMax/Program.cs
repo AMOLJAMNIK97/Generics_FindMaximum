@@ -10,9 +10,9 @@ namespace Generics_FindMax
     {
         static void Main(string[] args)
         {
-            Floats_Max floats = new Floats_Max();
-            float max = floats.Find_FloatMax(25.1f, 10.5f, 22.9f);
-            Console.WriteLine(max);
+            String_Max string_Max = new String_Max();
+            string Max = string_Max.Find_StringMax("Apple", "Peach", "Banana");
+            Console.WriteLine(Max);
         }
     }
 }
