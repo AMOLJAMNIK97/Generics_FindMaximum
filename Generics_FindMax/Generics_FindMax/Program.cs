@@ -10,8 +10,8 @@ namespace Generics_FindMax
     {
         static void Main(string[] args)
         {
-            Integers_Max integers = new Integers_Max();
-            int max=integers.FindMax_Integers(25, 35, 48);
+            Floats_Max floats = new Floats_Max();
+            float max = floats.Find_FloatMax(25.1f, 10.5f, 22.9f);
             Console.WriteLine(max);
         }
     }
